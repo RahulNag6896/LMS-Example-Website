@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/60af8529a4.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="head">
+      <input type="text" placeholder="&#xF002; Search here..." style="font-family:Arial, FontAwesome" />
+      <div class="headLinks">
+        <a class="downloadBtn" href="">Download App<span class="material-icons-outlined">keyboard_arrow_down</span></a>
+        <a href=""><span class="material-icons-outlined">question_answer</span></a>
+        <a href=""><span class="material-icons-outlined">campaign</span></a>
+        <a href=""><span class="material-icons-outlined">add_circle_outline</span></a>
+        <a href=""><span class="material-icons-outlined">settings</span></a>
+        <a href=""><span class="material-icons-outlined">person</span></a>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+      <div class="sideBar">
+        <h3>CHANGE IAS</h3><hr>
+        <a href=""><span class="material-icons-round">home</span>Home</a>
+        <a href=""><span class="material-icons-round">dashboard</span>Dashboard</a>
+        <!-- Leads -->
+        <div class="dropdown">
+          <a class="dropbtn"><span class="fas fa-user-tie"></span> Leads<span class="rightArrow">&#10095;</span></a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <a href=""><span class="fas fa-user-graduate"></span> Students</a>
+        <!-- Fees -->
+        <div class="dropdown">
+          <a class="dropbtn" href=""><span class="fas fa-wallet"></span> Fees<span class="rightArrow">&#10095;</span></a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <a href=""><span class="fas fa-chalkboard-teacher"></span> Teachers</a>
+        <!-- classes -->
+        <div class="dropdown">
+          <a class="dropbtn" href=""><span class="fas fa-chalkboard"></span> Classes<span class="rightArrow" >&#10095;</span></a>
+            <div class="dropdown-content">
+              <a href="#">Setup</a>
+              <a href="#">Courses</a>
+              <a href="#">Schedule</a>
+              <a href="">Attendance</a>
+              <a href="">Time Table</a>
+              <a href="">Course Deletion</a>
+            </div>
+          </div>
+        <a href=""><span class="fas fa-pen-nib"></span> Exams</a>
+        <!-- Live Classes -->
+        <div class="dropdown">
+          <a class="dropbtn" href=""><span class="material-icons-outlined">cast_for_education</span>Live Classes<span class="rightArrow">&#10095;</span></a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        <a href=""><span class="fa fa-users"></span> Users</a>
+        <!-- Attendance -->
+        <div class="dropdown">
+          <a class="dropbtn" href=""><span class="fas fa-user-check"></span> Attendance<span class="rightArrow">&#10095;</span></a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <!-- Content Library -->
+        <div class="dropdown">
+          <a class="dropbtn" href=""><span class="fa fa-book"></span> Content Library<span class="rightArrow">&#10095;</span></a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <a href=""><span class="material-icons-outlined">dvr</span>Online Test</a>
+        <!-- Communicate -->
+        <div class="dropdown">
+          <a class="dropbtn" href=""><span class="fa fa-comments-o"></span> Communicate<span class="rightArrow">&#10095;</span></a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <!-- Store -->
+        <div class="dropdown">
+          <a class="dropbtn" href=""><span class="fas fa-shopping-cart"></span> Store<span class="rightArrow">&#10095;</span></a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div> 
+    <div class="mainWindow">
+      <div class="topLinks">
+        <div class="Link" onclick="myFunction(event)">
+          <li><a class="btn" href="templates/Courses/Courses.html" target="iframe_a">Courses</a></li>
+          <li><a class="btn" href="templates/Standard/Standard.html" target="iframe_a">Standard</a></li>
+          <li><a class="btn" href="templates/Subject/Subject.html" target="iframe_a">Subject</a></li>
+          <li><a class="btn" href="templates/Topic/Topic.html" target="iframe_a">Topic</a></li>
+          <li><a class="btn" href="templates/Ecourse Mapping/EncourseMapping.html" target="iframe_a">Ecourse Mapping</a></li>
+        </div>
+        <!------ SCRIPT FOR TOPLINKS ------>
+        <script>
+          function myFunction(btn) {
+            var btns= document.querySelectorAll(".active");
+            [].forEach.call(btns, function(btnClass) {
+              btnClass.classList.remove("active");
+            });
+            btn.target.className = "active";
+          }
+        </script>
+      </div>
+      <iframe width="100%" name="iframe_a" title="Iframe Example"></iframe>
+    </div>
+  </div>
+  
+  <footer>
+
+  </footer>
+</body>
+</html>

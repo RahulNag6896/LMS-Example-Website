@@ -1,0 +1,142 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 0;
+  margin-bottom: .5rem;
+  box-shadow: 4px 2px 10px 0px #cbcbcb;
+}
+.head input{
+  padding: .5rem;
+  height: 1.1rem;
+  width: 20rem;
+  border-radius: 1.2rem;
+  margin-left: 15%;
+  border: 1px solid gray;
+}
+.headLinks{
+  margin-right: 1rem;
+}
+.headLinks a{
+  padding: .5rem;
+  color: gray;
+}
+.downloadBtn{
+  border: 1px solid #00325e;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.container{
+  display: flex;
+  height: 90vh;
+}
+.sideBar{
+  width: 15%;
+  background-color: #00325e;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  direction: rtl;
+}
+.sideBar h3{
+  text-align: center;
+  padding: 1rem;
+  color: #f6f6f6;
+}
+.sideBar a{
+  padding: 1rem;
+  text-decoration: none;
+  direction: ltr;
+  color: #f6f6f6;
+}
+.sideBar a:hover{
+  background-image: linear-gradient(to right, rgb(0 50 94),rgb(0 168 255));
+}
+.mainWindow{
+  flex-grow: 1;
+}
+.topLinks{
+  background-color:#fff;
+  box-shadow: 4px 2px 10px 0px #cbcbcb;
+}
+.Link{
+  display: flex;
+  flex-direction: row;
+}
+.Link li{
+  list-style: none;
+  padding: 0 .75rem ;
+}
+.Link li a{
+  color: #00325e;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem .75rem ;
+}
+.Link li .active {
+  color: #00a8ff;
+  border-bottom: 5px solid #00a8ff;
+  width: fit-content;
+}
+iframe{
+  border: none;
+  height: 600px;
+}
+/* icon allignment adjustment */
+.sideBar .material-icons-round{
+  vertical-align: bottom;
+}
+.sideBar .material-icons-outlined{
+  vertical-align: bottom;
+}
+.rightArrow{
+  float: right;
+}
+.downloadBtn .material-icons-outlined{
+  vertical-align: middle!important;
+}  
+.headLinks .material-icons-outlined{
+  vertical-align: bottom;
+}
+/* dropdowns */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  direction: ltr;
+  display: grid;
+  justify-items: stretch;
+  position: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 150px;
+  background-color: #00325e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index:1;
+}
+.dropdown-content a {
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {background-image: linear-gradient(to right, rgb(0 50 94),rgb(0 168 255));}
